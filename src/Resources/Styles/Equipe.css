@@ -1,0 +1,54 @@
+.equipe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Images/desfoques.png);
+    background-size: cover;
+}
+
+.equipe h1{
+    font-size: 62px;
+    color: #FFFFFF;
+    padding: 60px;
+}
+.equipe-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.equipe-cards img{
+    transition: transform .5s;
+}
+.equipe-cards img:hover{
+    transition: all .5s;
+    transform: scale(105%);
+}
+
+
+@media (min-width:320px) and (max-width:768px) {
+    .equipe-cards img{
+        width: 90vw;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width:1024px) and (max-width:1366px) {
+    .equipe-cards{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    .equipe-cards img{
+        width: 30%;
+    }
+}

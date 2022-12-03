@@ -1,0 +1,115 @@
+body {
+  background-image: url("../Images/bg-404.png");
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  background-size: contain;
+}
+.mainbox{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+}
+.far {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #ff0043 ;
+  font-weight: 900;
+  font-size: 8.5rem;
+  animation: spin 3s infinite linear;
+}
+.err {
+  color: #ff0043;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  font-weight: 900;
+}
+.msg{
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+a {
+  text-decoration: none;
+  color: #ff0043;
+}    
+a:hover {
+  color: #cf0037;
+}
+
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    body {
+      background-image: url("../Images/bg-404.png");
+      background-size: 250vw 100vh;
+    }
+    .mainbox{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .error{
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      /* align-items: center; */
+      justify-content: center;
+    }
+    .far {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      color: #ff0043 ;
+      font-weight: 900;
+      font-size: 5rem;
+      animation: spin 3s infinite linear;
+    }
+    .err {
+      color: #ff0043;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 7rem;
+      font-weight: 900;
+    }
+    .msg{
+      width: 90%;
+      color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: #ff0043;
+    }    
+    a:hover {
+      color: #cf0037;
+    }
+  }
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
